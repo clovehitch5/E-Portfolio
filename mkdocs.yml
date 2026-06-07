@@ -1,0 +1,8 @@
+site_name: E-Portfolio mkdocs
+theme: windmill
+
+plugins:
+  - search
+
+extra_css:
+  - style.css

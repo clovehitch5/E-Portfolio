@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Print Site - E-Portfolio MkDocs</title>
+    <link href="./css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="./css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="./css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/highlight.css">
+    <link href="../css/print-site.css" rel="stylesheet">
+    <link href="../stylesheets/link-embeds.css" rel="stylesheet">
+    <link href="../stylesheets/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/bootstrap-3.3.7.min.js"></script>
+    <script src="./js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '.';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "1 MkDocs", url: "#_top", children: [
+          ]},
+          {title: "2 Static Site Generatoren", url: "#section-2", children: [
+              {title: "2.1 Beispiele", url: "#static_sites-examples" },
+              {title: "2.2 Static Site Generator", url: "#static_sites-static_sites" },
+              {title: "2.3 Warum Markdown?", url: "#static_sites-md" },
+          ]},
+          {title: "3 Aufsetzen", url: "#section-3", children: [
+              {title: "3.1 Installation", url: "#init-installation" },
+              {title: "3.2 Projekt erstellen", url: "#init-setup" },
+              {title: "3.3 Dateistruktur", url: "#init-layout" },
+              {title: "3.4 Lokal testen", url: "#init-test" },
+          ]},
+          {title: "4 Konfiguration", url: "#section-4", children: [
+              {title: "4.1 Konfiguration", url: "#config-config" },
+              {title: "4.2 Themes", url: "#section-4-2" },
+              {title: "4.3 Plugins", url: "#section-4-3" },
+          ]},
+          {title: "5 HTML, JS \u0026 Css", url: "#section-5", children: [
+              {title: "5.1 HTML-Code in md", url: "#extras-html" },
+              {title: "5.2 JS \u0026amp; CSS", url: "#extras-js_css" },
+          ]},
+          {title: "6 Deployment", url: "#section-6", children: [
+              {title: "6.1 Github Pages", url: "#deployment-github_pages" },
+              {title: "6.2 andere Anbieter", url: "#deployment-andere_anbieter" },
+          ]},
+          {title: "7 Demo", url: "#section-7", children: [
+              {title: "7.1 Demo", url: "#demo-demo" },
+              {title: "7.2 Steps", url: "#demo-steps" },
+          ]},
+          {title: "8 Vergleich", url: "#vergleich", children: [
+          ]},
+          {title: "9 Zensical - der MkDocs Nachfolger?", url: "#zukunft", children: [
+          ]},
+          {title: "10 Ki generierte Inhalte", url: "#ki", children: [
+          ]},
+          {title: "11 Quellen", url: "#quellen", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="./js/base.js"></script>
+      <script src="../js/print-site.js"></script> 
+
+        <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+            remove_material_navigation();remove_mkdocs_theme_navigation();generate_toc();
+        })
+        </script>
+        </head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+
+    <div id="print-site-page" class="print-site-enumerate-headings print-site-enumerate-figures">
+        <section class="print-page">
+            <div id="print-page-toc" data-toc-depth="3">
+                <nav role='navigation' class='print-page-toc-nav'>
+                <h1 class='print-page-toc-title'>Table of Contents</h1>
+                </nav>
+            </div>
+        </section>
+        <section class="print-page" id="index" heading-number="1"><h1 id="index-mkdocs">MkDocs</h1>
+<ol>
+<li>Static Site Generatoren</li>
+<li>Projekt erstellen</li>
+<li>Konfiguration<ol>
+<li>Theme</li>
+<li>Plugins</li>
+</ol>
+</li>
+<li>Html,JS,CSS</li>
+<li>Deployment</li>
+<li>Demo</li>
+<li>Vergleich</li>
+</ol></section>
+                    <section class='print-page md-section' id='section-2' heading-number='2'>
+                        <h1>Static Site Generatoren<a class='headerlink' href='#section-2' title='Permanent link'></a>
+                        </h1>
+                    <section class="print-page" id="static_sites-examples" heading-number="2.1"><h1 id="static_sites-examples-beispiele">Beispiele</h1>
+<p><a href="https://microsoft.github.io/code-with-engineering-playbook/">Microsoft ISE Engineering Fundamentals Playbook</a></p>
+<p><a href="https://google.github.io/accompanist/">Google Accompanist</a></p>
+<p><a href="https://www.django-rest-framework.org/">Django</a></p>
+<p><a href="https://docs.ros.org/en/kilted/">ROS2</a></p></section><section class="print-page" id="static_sites-static_sites" heading-number="2.2"><h1 id="static_sites-static_sites-static-site-generator">Static Site Generator</h1>
+<div class="pipeline-container">
+  <div class="pipeline-row">
+
+    <div class="pipeline-step">
+      <b>.md</b>
+      <div class="pipeline-step-title">Markdown Files</div>
+    </div>
+
+    <div class="pipeline-arrow">⟶</div>
+
+    <div class="pipeline-step">
+      <img src="/E-Portfolio/images/mkdocs.png">
+      <div class="pipeline-step-title">MkDocs Config</div>
+    </div>
+
+    <div class="pipeline-arrow">⟶</div>
+
+    <div class="pipeline-step">
+      <img src="/E-Portfolio/images/python.png">
+      <div class="pipeline-step-title">Python Processing</div>
+    </div>
+
+    <div class="pipeline-arrow">⟶</div>
+
+    <div class="pipeline-step">
+      <img src="/E-Portfolio/images/css.png">
+      <div class="pipeline-step-title">Theme Rendering</div>
+    </div>
+
+    <div class="pipeline-arrow">⟶</div>
+
+    <div class="pipeline-step">
+      <img src="/E-Portfolio/images/html.png">
+      <div class="pipeline-step-title">Static HTML Output</div>
+    </div>
+
+  </div>
+</div></section><section class="print-page" id="static_sites-md" heading-number="2.3"><h1 id="static_sites-md-warum-markdown">Warum Markdown?</h1>
+<p><img src=/E-Portfolio/images/discord.png width= 150>
+<img src=/E-Portfolio/images/webex.png width= 150>
+<img src=/E-Portfolio/images/gitlab.png width= 150>
+<img src=/E-Portfolio/images/readme.png width= 150></p>
+<ul>
+<li>einfach zu verstehen</li>
+<li>intuitiv</li>
+</ul></section></section>
+                    <section class='print-page md-section' id='section-3' heading-number='3'>
+                        <h1>Aufsetzen<a class='headerlink' href='#section-3' title='Permanent link'></a>
+                        </h1>
+                    <section class="print-page" id="init-installation" heading-number="3.1"><h1 id="init-installation-installation">Installation</h1>
+<p>als python packacke:</p>
+<pre><code class="language-bash">pip install mkdocs
+</code></pre></section><section class="print-page" id="init-setup" heading-number="3.2"><h1 id="init-setup-setup">Setup</h1>
+<pre><code class="language-bash">mkdocs new [project-name]
+</code></pre></section><section class="print-page" id="init-layout" heading-number="3.3"><h1 id="init-layout-dateistruktur">Dateistruktur</h1>
+<pre><code>.
+├──mkdocs.yml # Konfiguration
+├──docs
+    ├──index.md
+    ├──about.md
+    ├──folder
+    |    ├──child.md
+    ├──style.css
+    ├──script.js
+├──... # z.B. src
+...
+</code></pre></section><section class="print-page" id="init-test" heading-number="3.4"><h1 id="init-test-lokal-testen">Lokal testen</h1>
+<pre><code class="language-bash">mkdocs serve
+</code></pre>
+<p><a href="http://localhost:8000/#">http://localhost:8000/#</a></p></section></section>
+                    <section class='print-page md-section' id='section-4' heading-number='4'>
+                        <h1>Konfiguration<a class='headerlink' href='#section-4' title='Permanent link'></a>
+                        </h1>
+                    <section class="print-page" id="config-config" heading-number="4.1"><h1 id="config-config-konfiguration">Konfiguration</h1>
+<p>in <code>mkdocs.yml</code>:</p>
+<h2 id="config-config-seitenname">Seitenname</h2>
+<pre><code class="language-yml">site_name: MkLorum
+</code></pre>
+<h2 id="config-config-navigation">Navigation</h2>
+<pre><code class="language-yml">nav:
+  - Home: index.md
+  - about.md
+  - Folder/
+</code></pre>
+<h2 id="config-config-repository">Repository</h2>
+<pre><code class="language-yml">repo_url: https://github.com/clovehitch5/E-Portfolio
+</code></pre></section>
+                    <section class='print-page md-section' id='section-4-2' heading-number='4.2'>
+                        <h1>Themes<a class='headerlink' href='#section-4-2' title='Permanent link'></a>
+                        </h1>
+                    <section class="print-page" id="config-themes-theme_config" heading-number="4.2.1"><h1 id="config-themes-theme_config-theme">Theme</h1>
+<p>im <code>mkdocs.yml</code> file:</p>
+<pre><code class="language-yml">theme: windmill
+</code></pre>
+<p>oder</p>
+<pre><code class="language-yml">theme:
+  name: material
+  features:
+    - content.code.copy
+</code></pre></section><section class="print-page" id="config-themes-gallery" heading-number="4.2.2"><p><a href="https://pawamoy.github.io/mkdocs-gallery/">https://pawamoy.github.io/mkdocs-gallery/:</a></p>
+<iframe src="https://pawamoy.github.io/mkdocs-gallery/" 
+        style="width:100%; height:80vh; border:0;" 
+        title="MkDocs Gallery"></iframe></section></section>
+                    <section class='print-page md-section' id='section-4-3' heading-number='4.3'>
+                        <h1>Plugins<a class='headerlink' href='#section-4-3' title='Permanent link'></a>
+                        </h1>
+                    <section class="print-page" id="config-plugins-verwendung" heading-number="4.3.1"><h1 id="config-plugins-verwendung-plugins">Plugins</h1>
+<p>im <code>mkdocs.yml</code> file:</p>
+<pre><code class="language-yml">plugins:
+  - search
+  - mermaid2
+  - link-embeds:
+      accent: 4C59BFE0
+</code></pre></section><section class="print-page" id="config-plugins-n%c3%bctzliche" heading-number="4.3.2"><h1 id="config-plugins-n%c3%bctzliche-nutzliche-plugins">nützliche Plugins</h1>
+<p>zu finden auf <a href="https://github.com/mkdocs/catalog">https://github.com/mkdocs/catalog</a></p>
+<h2 id="config-plugins-n%c3%bctzliche-search">search</h2>
+<p>Suche über die Doku</p>
+<div class="mkde-embed-container" style="border: 2px solid #4C59BFE0">
+    <div class="mkde-sub mkde-format-sub _lc _sm _lh-4 _ts">
+      <div class="mkde-inner">
+        <div class="mkde-left" style="">
+          <div class="mkde-left-s1" style="padding-bottom: 100%">
+            <div class="mkde-left-s2">
+              <a href="https://mkdocs-mermaid2.readthedocs.io/en/latest/" target="_blank" rel="noopener" data-do-not-bind-click="" class="mkde-img" style="background-image: url('https://mermaid.js.org/favicon.svg');"></a>
+            </div>
+          </div>
+        </div>
+        <div class="mkde-right">
+          <div class="mkde-format _fs-x _ff _fs-n _fw-n">
+            <div class="item-title _f1p _fs-n _fw-b">
+              <a class="item-title-link" href="https://mkdocs-mermaid2.readthedocs.io/en/latest/" target="_blank" rel="noopener">mermaid2</a>
+            </div>
+            <div class="item-desc">erlaubt mermaid Diagramme</div>
+            <div class="item-footer-format _fs-m item-footer">
+              <div class="item-link-container">
+                <a href="https://mkdocs-mermaid2.readthedocs.io/en/latest/" target="_blank" rel="noopener"><img style="padding-right: 7px; width: 25px" class="mkde-link-favicon" src="https://mkdocs-mermaid2.readthedocs.io/en/latest/assets/images/favicon.png"></a>
+                <a class="item-link _fs-m" href="https://mkdocs-mermaid2.readthedocs.io/en/latest/" target="_blank" rel="noopener">
+                    <span class="ct-r-link-t">https://mkdocs-mermaid2.readthedocs.io/en/latest/</span>
+                    <span class="ct-r-link-d">https://mkdocs-mermaid2.readthedocs.io/en/latest/</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<h2 id="config-plugins-n%c3%bctzliche-mkdocstrings">mkdocstrings</h2>
+<p>Erstellt automatisch eine Dokumentation aus Docstrings:</p>
+<ul>
+<li>C</li>
+<li>Python</li>
+<li>MATLAB</li>
+<li>TypeScript</li>
+<li>...</li>
+</ul>
+<h2 id="config-plugins-n%c3%bctzliche-doxygen">doxygen</h2>
+<p>Erstell automatisch eine Dokumantation durch Doxygen Kommentare</p>
+<div class="mkde-embed-container" style="border: 2px solid #4C59BFE0">
+    <div class="mkde-sub mkde-format-sub _lc _sm _lh-4 _ts">
+      <div class="mkde-inner">
+        <div class="mkde-left" style="display:none;">
+          <div class="mkde-left-s1" style="padding-bottom: 100%">
+            <div class="mkde-left-s2">
+              <a href="https://blueswen.github.io/mkdocs-glightbox/gallery/gallery/#taipei" target="_blank" rel="noopener" data-do-not-bind-click="" class="mkde-img" style="background-image: url('false');"></a>
+            </div>
+          </div>
+        </div>
+        <div class="mkde-right">
+          <div class="mkde-format _fs-x _ff _fs-n _fw-n">
+            <div class="item-title _f1p _fs-n _fw-b">
+              <a class="item-title-link" href="https://blueswen.github.io/mkdocs-glightbox/gallery/gallery/#taipei" target="_blank" rel="noopener">MkDocs GLightbox</a>
+            </div>
+            <div class="item-desc">Erlabt Gallerien</div>
+            <div class="item-footer-format _fs-m item-footer">
+              <div class="item-link-container">
+                <a href="https://blueswen.github.io/mkdocs-glightbox/gallery/gallery/#taipei" target="_blank" rel="noopener"><img style="padding-right: 7px; width: 25px" class="mkde-link-favicon" src="https://blueswen.github.io/mkdocs-glightbox/gallery/gallery/../../assets/images/favicon.png"></a>
+                <a class="item-link _fs-m" href="https://blueswen.github.io/mkdocs-glightbox/gallery/gallery/#taipei" target="_blank" rel="noopener">
+                    <span class="ct-r-link-t">https://blueswen.github.io/mkdocs-glightbox/gallery/gallery/#taipei</span>
+                    <span class="ct-r-link-d">https://blueswen.github.io/mkdocs-glightbox/gallery/gallery/#taipei</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="mkde-embed-container" style="border: 2px solid #4C59BFE0">
+    <div class="mkde-sub mkde-format-sub _lc _sm _lh-4 _ts">
+      <div class="mkde-inner">
+        <div class="mkde-left" style="">
+          <div class="mkde-left-s1" style="padding-bottom: 100%">
+            <div class="mkde-left-s2">
+              <a href="https://aetherinox.github.io/mkdocs-link-embeds/home/" target="_blank" rel="noopener" data-do-not-bind-click="" class="mkde-img" style="background-image: url('https://github.com/Aetherinox/mkdocs-link-embeds/assets/118329232/98179e23-ce03-4101-a858-56db0cd0e8f0');"></a>
+            </div>
+          </div>
+        </div>
+        <div class="mkde-right">
+          <div class="mkde-format _fs-x _ff _fs-n _fw-n">
+            <div class="item-title _f1p _fs-n _fw-b">
+              <a class="item-title-link" href="https://aetherinox.github.io/mkdocs-link-embeds/home/" target="_blank" rel="noopener">mkdocs-link-embeds</a>
+            </div>
+            <div class="item-desc">Stellt Links graphisch da. (wie hier)</div>
+            <div class="item-footer-format _fs-m item-footer">
+              <div class="item-link-container">
+                <a href="https://aetherinox.github.io/mkdocs-link-embeds/home/" target="_blank" rel="noopener"><img style="padding-right: 7px; width: 25px" class="mkde-link-favicon" src="https://aetherinox.github.io/mkdocs-link-embeds/home/../assets/favicon.png"></a>
+                <a class="item-link _fs-m" href="https://aetherinox.github.io/mkdocs-link-embeds/home/" target="_blank" rel="noopener">
+                    <span class="ct-r-link-t">https://aetherinox.github.io/mkdocs-link-embeds/home/</span>
+                    <span class="ct-r-link-d">https://aetherinox.github.io/mkdocs-link-embeds/home/</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="mkde-embed-container" style="border: 2px solid #4C59BFE0">
+    <div class="mkde-sub mkde-format-sub _lc _sm _lh-4 _ts">
+      <div class="mkde-inner">
+        <div class="mkde-left" style="display:none;">
+          <div class="mkde-left-s1" style="padding-bottom: 100%">
+            <div class="mkde-left-s2">
+              <a href="https://pawamoy.github.io/mkdocs-llmstxt/" target="_blank" rel="noopener" data-do-not-bind-click="" class="mkde-img" style="background-image: url('false');"></a>
+            </div>
+          </div>
+        </div>
+        <div class="mkde-right">
+          <div class="mkde-format _fs-x _ff _fs-n _fw-n">
+            <div class="item-title _f1p _fs-n _fw-b">
+              <a class="item-title-link" href="https://pawamoy.github.io/mkdocs-llmstxt/" target="_blank" rel="noopener">mkdocs-copy-to-llm</a>
+            </div>
+            <div class="item-desc">Fügt ein Knopf hinzu um eine komplette Seite als md zu kopieren.</div>
+            <div class="item-footer-format _fs-m item-footer">
+              <div class="item-link-container">
+                <a href="https://pawamoy.github.io/mkdocs-llmstxt/" target="_blank" rel="noopener"><img style="padding-right: 7px; width: 25px" class="mkde-link-favicon" src="https://pawamoy.github.io/assets/images/favicon.png"></a>
+                <a class="item-link _fs-m" href="https://pawamoy.github.io/mkdocs-llmstxt/" target="_blank" rel="noopener">
+                    <span class="ct-r-link-t">https://pawamoy.github.io/mkdocs-llmstxt/</span>
+                    <span class="ct-r-link-d">https://pawamoy.github.io/mkdocs-llmstxt/</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="mkde-embed-container" style="border: 2px solid #4C59BFE0">
+    <div class="mkde-sub mkde-format-sub _lc _sm _lh-4 _ts">
+      <div class="mkde-inner">
+        <div class="mkde-left" style="display:none;">
+          <div class="mkde-left-s1" style="padding-bottom: 100%">
+            <div class="mkde-left-s2">
+              <a href="https://pypi.org/project/python-markdown-math/" target="_blank" rel="noopener" data-do-not-bind-click="" class="mkde-img" style="background-image: url('false');"></a>
+            </div>
+          </div>
+        </div>
+        <div class="mkde-right">
+          <div class="mkde-format _fs-x _ff _fs-n _fw-n">
+            <div class="item-title _f1p _fs-n _fw-b">
+              <a class="item-title-link" href="https://pypi.org/project/python-markdown-math/" target="_blank" rel="noopener">mdx_math</a>
+            </div>
+            <div class="item-desc">Erlaubt mathematische Ausdrücke</div>
+            <div class="item-footer-format _fs-m item-footer">
+              <div class="item-link-container">
+                <a href="https://pypi.org/project/python-markdown-math/" target="_blank" rel="noopener"><img style="padding-right: 7px; width: 25px" class="mkde-link-favicon" src="https://pypi.org/static/images/favicon.35549fe8.ico"></a>
+                <a class="item-link _fs-m" href="https://pypi.org/project/python-markdown-math/" target="_blank" rel="noopener">
+                    <span class="ct-r-link-t">https://pypi.org/project/python-markdown-math/</span>
+                    <span class="ct-r-link-d">https://pypi.org/project/python-markdown-math/</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<p>und viele mehr...</p></section></section></section>
+                    <section class='print-page md-section' id='section-5' heading-number='5'>
+                        <h1>HTML, JS & Css<a class='headerlink' href='#section-5' title='Permanent link'></a>
+                        </h1>
+                    <section class="print-page" id="extras-html" heading-number="5.1"><h1 id="extras-html-html-code-in-md">HTML-Code in md</h1>
+<p><button onClick=window.print()>Seite drucken</button></p>
+<pre><code class="language-md"># HTML-Code in md
+
+&lt;button onClick=window.print()&gt;Seite drucken&lt;/button&gt;
+</code></pre></section><section class="print-page" id="extras-js_css" heading-number="5.2"><h1 id="extras-js_css-js-css">JS &amp; CSS</h1>
+<p>in mkdocs.yml:</p>
+<pre><code class="language-yml">extra_css:
+  - stylesheets/link-embeds.css
+  - stylesheets/style.css
+extra_js:
+  - scripts/buttons.js
+</code></pre></section></section>
+                    <section class='print-page md-section' id='section-6' heading-number='6'>
+                        <h1>Deployment<a class='headerlink' href='#section-6' title='Permanent link'></a>
+                        </h1>
+                    <section class="print-page" id="deployment-github_pages" heading-number="6.1"><h1 id="deployment-github_pages-deployment">Deployment</h1>
+<h2 id="deployment-github_pages-github-pages">GitHub Pages</h2>
+<pre><code class="language-bash">mkdocs gh-deploy --clean
+</code></pre>
+<pre><code class="language-mermaid">gitGraph LR:
+    commit id: &quot;1.0.0&quot;
+    commit id: &quot;1.0.1&quot;
+</code></pre>
+<pre><code class="language-mermaid">---
+config:
+
+    theme: 'default'
+    themeVariables:
+        'git0': '#ff0000'
+    gitGraph:
+        mainBranchName: &quot;gh-pages&quot;
+
+---
+gitGraph LR:
+    commit id: &quot;Deployed '1.0.0' with MkDocs&quot;
+    commit id: &quot;Deployed '1.0.1' with MkDocs&quot;
+</code></pre></section><section class="print-page" id="deployment-andere_anbieter" heading-number="6.2"><h1 id="deployment-andere_anbieter-deployment">Deployment</h1>
+<h2 id="deployment-andere_anbieter-andere-anbieter">Andere Anbieter</h2>
+<pre><code class="language-bash">mkdocs build
+</code></pre>
+<p>upload z.B. über ci-cd-Pipeline</p></section></section>
+                    <section class='print-page md-section' id='section-7' heading-number='7'>
+                        <h1>Demo<a class='headerlink' href='#section-7' title='Permanent link'></a>
+                        </h1>
+                    <section class="print-page" id="demo-demo" heading-number="7.1"><h1 id="demo-demo-demo">Demo</h1></section><section class="print-page" id="demo-steps" heading-number="7.2"><p><button type="button" onClick="navigator.clipboard.writeText('mkdocs new mkdocs_demo')">mkdocs new mkdocs_demo</button></p>
+<p><button type="button" onClick="navigator.clipboard.writeText('mkdocs serve')">mkdocs serve</button></p>
+<p>add files</p>
+<pre><code class="language-md">```mermaid
+flowchart TD
+    A[Christmas] --&gt;|Get money| B(Go shopping)
+    B --&gt; C{Let me think}
+    C --&gt;|One| D[Laptop]
+    C --&gt;|Two| E[iPhone]
+    C --&gt;|Three| F[Car]
+```
+</code></pre>
+<p>search plugin <a href="https://github.com/mkdocs/catalog">https://github.com/mkdocs/catalog</a></p>
+<p>add theme <a href="https://pawamoy.github.io/mkdocs-gallery/">https://pawamoy.github.io/mkdocs-gallery/</a></p>
+<p>create repository <a href="https://github.com/new">https://github.com/new</a></p>
+<p><button type="button" onClick="navigator.clipboard.writeText('git remote add origin git@github.com:clovehitch5/mkdocs_demo.git')">git remote add origin git@github.com:clovehitch5/mkdocs_demo.git</button></p>
+<p><button type="button" onClick="navigator.clipboard.writeText('git init')">git init</button></p>
+<p><button type="button" onClick="navigator.clipboard.writeText('git commit -am "initial commit"')">git commit -am "initial commit"</button></p>
+<p><button type="button" onClick="navigator.clipboard.writeText('mkdocs gh-pages')">mkdocs gh-pages</button></p></section></section><section class="print-page" id="vergleich" heading-number="8"><h1 id="vergleich-vergleich">Vergleich</h1>
+<table class="table table-striped table-hover table-bordered table-condensed">
+    <thead>
+        <tr>
+            <th></th>
+            <th>MkDocs</th>
+            <th>Sphinx</th>
+            <th>Docusaurus</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><b>Sprache</b></td>
+            <td>Markdown</td>
+            <td>reStructured Text, Markdown</td>
+            <td style=background:lightgreen>Markdown, mdx</td>
+        </tr>
+        <tr>
+            <td><b>Ausgabeformat</b></td>
+            <td>html,(pdf, ePub)</td>
+            <td style=background:lightgreen>html, Apple Help Book, Latex⟶pdf , man pages, Texinfo</td>
+            <td>React-basierte Webseite</td>
+        </tr>
+        <tr>
+            <td><b>Kosten</b></td>
+            <td style=background:LightCoral>Gratis (MkDocs 2 evtl. kostenpflichtige Features)</td>
+            <td>Gratis</td>
+            <td>Gratis</td>
+        </tr>
+        <tr>
+            <td><b>Extensions</b></td>
+            <td>Community-Plugins</td>
+            <td>Community-Extensions</td>
+            <td>Community-Plugins</td>
+        </tr>
+        <tr>
+            <td><b>Styling</b></td>
+            <td>Comunity- themes</td>
+            <td>Community‑Themes</td>
+            <td style=background:LightCoral>CSS</td>
+        </tr>
+        <tr>
+            <td><b>Sonstiges</b></td>
+            <td style=background:lightgreen>4 elementare Befehle</td>
+            <td style=background:LightCoral>Sehr mächtig, aber komplexer</td>
+            <td>ähnelt React sehr<br> von Meta</td>
+        </tr>
+    </tbody>
+</table></section><section class="print-page" id="zukunft" heading-number="9"><h1 id="zukunft-zensical-der-mkdocs-nachfolger">Zensical - der MkDocs Nachfolger?</h1>
+<p>von den Machern von <code>Material for MkDocs</code></p>
+<table class="table table-striped table-hover table-bordered table-condensed">
+    <thead>
+        <tr>
+            <th>Kategorie</th>
+            <th><strong>MkDocs</strong></th>
+            <th><strong>Zensical</strong></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Status</strong></td>
+            <td>kaum Weiterentwicklung (seit 2 Jahren kein Update)</td>
+            <td style=background:lightgreen>Aktive Entwicklung, moderne Architektur</td>
+        </tr>
+        <tr>
+            <td><strong>Reifegrad</strong></td>
+            <td style=background:lightgreen>Ausgereift, weit verbreitet</td>
+            <td>Beta‑Phase, noch nicht produktionsreif</td>
+        </tr>
+        <tr>
+            <td><strong>Plugins</strong></td>
+            <td style=background:lightgreen>Große Community, viele Plugins</td>
+            <td>Noch kaum Plugins, API im Aufbau</td>
+        </tr>
+        <tr>
+            <td><strong>Themes</strong></td>
+            <td style=background:lightgreen>Viele Themes (v. a. Material)</td>
+            <td>Wenige Themes, Fokus auf Standard‑Look</td>
+        </tr>
+        <tr>
+            <td><strong>Zukunft</strong></td>
+            <td style=background:LightCoral>MkDocs 2 unklar (evtl. ohne Plugins, evtl. kostenpflichtig)</td>
+            <td style=background:LightCoral>Vielversprechend, aber noch instabil</td>
+        </tr>
+        <tr>
+            <td><strong>Kosten</strong></td>
+            <td style=background:LightCoral>Kostenlos (MkDocs 2 evtl. Freemium)</td>
+            <td style=background:lightgreen>Kostenlos (Beta)</td>
+        </tr>
+        <tr>
+            <td><strong>Community</strong></td>
+            <td>Groß, etabliert</td>
+            <td>Klein, wächst gerade</td>
+        </tr>
+    </tbody>
+</table></section><section class="print-page" id="ki" heading-number="10"><h1 id="ki-ki-generierte-inhalte">Ki generierte Inhalte</h1>
+<ul>
+<li><a href="#static_sites-static_sites">Kacheln</a></li>
+<li><a href="#static_sites-md">Gitlab Wiki Logo</a></li>
+</ul></section><section class="print-page" id="quellen" heading-number="11"><h1 id="quellen-quellen">Quellen</h1>
+<h2 id="quellen-mkdocs">Mkdocs</h2>
+<p><a href="https://mkdocs.readthedocs.io/en/0.15.2/">https://mkdocs.readthedocs.io/en/0.15.2/</a></p>
+<p><a href="https://github.com/mkdocs/mkdocs/wiki">https://github.com/mkdocs/mkdocs/wiki</a></p>
+<p><a href="https://www.mkdocs.org/">https://www.mkdocs.org/</a></p>
+<p><a href="https://pawamoy.github.io/mkdocs-gallery/">https://pawamoy.github.io/mkdocs-gallery/</a></p>
+<p><a href="https://github.com/mkdocs/catalog">https://github.com/mkdocs/catalog</a></p>
+<p><a href="https://squidfunk.github.io/mkdocs-material/blog/2026/02/18/mkdocs-2.0/">https://squidfunk.github.io/mkdocs-material/blog/2026/02/18/mkdocs-2.0/</a></p>
+<h2 id="quellen-plugins">Plugins</h2>
+<p><a href="https://mkdocs-mermaid2.readthedocs.io/en/latest/">https://mkdocs-mermaid2.readthedocs.io/en/latest/</a></p>
+<p><a href="https://blueswen.github.io/mkdocs-glightbox/gallery/gallery/#taipei">https://blueswen.github.io/mkdocs-glightbox/gallery/gallery/#taipei</a></p>
+<p><a href="https://aetherinox.github.io/mkdocs-link-embeds/home/">https://aetherinox.github.io/mkdocs-link-embeds/home/</a></p>
+<p><a href="https://pawamoy.github.io/mkdocs-llmstxt/">https://pawamoy.github.io/mkdocs-llmstxt/</a></p>
+<p><a href="https://pypi.org/project/python-markdown-math/">https://pypi.org/project/python-markdown-math/</a></p>
+<h2 id="quellen-konkurenten">Konkurenten</h2>
+<p><a href="https://docusaurus.io/docs">https://docusaurus.io/docs</a></p>
+<p><a href="https://www.sphinx-doc.org/en/master/">https://www.sphinx-doc.org/en/master/</a></p>
+<h2 id="quellen-beispiele">Beispiele</h2>
+<p><a href="https://docs.ros.org/en/kilted/">https://docs.ros.org/en/kilted/</a></p>
+<p><a href="https://www.django-rest-framework.org/">https://www.django-rest-framework.org/</a></p>
+<p><a href="https://google.github.io/accompanist/">https://google.github.io/accompanist/</a></p>
+<p><a href="https://microsoft.github.io/code-with-engineering-playbook/">https://microsoft.github.io/code-with-engineering-playbook/</a></p></section></div><style>.print-site-enumerate-headings #index > h1:before { content: '1 ' }
+
+                .print-site-enumerate-headings #index h2:before { content: '1.' counter(counter-index-2) ' ' }
+                .print-site-enumerate-headings #index h2 {  counter-reset: counter-index-3 ;  counter-increment: counter-index-2 }
+            
+                .print-site-enumerate-headings #index h3:before { content: '1.' counter(counter-index-2) '.' counter(counter-index-3) ' ' }
+                .print-site-enumerate-headings #index h3 {  counter-increment: counter-index-3 }
+            
+.print-site-enumerate-headings #section-2 > h1:before { content: '2 ' }
+.print-site-enumerate-headings #static_sites-examples > h1:before { content: '2.1 ' }
+
+                .print-site-enumerate-headings #static_sites-examples h2:before { content: '2.1.' counter(counter-static_sites-examples-2) ' ' }
+                .print-site-enumerate-headings #static_sites-examples h2 {  counter-increment: counter-static_sites-examples-2 }
+            
+.print-site-enumerate-headings #static_sites-static_sites > h1:before { content: '2.2 ' }
+
+                .print-site-enumerate-headings #static_sites-static_sites h2:before { content: '2.2.' counter(counter-static_sites-static_sites-2) ' ' }
+                .print-site-enumerate-headings #static_sites-static_sites h2 {  counter-increment: counter-static_sites-static_sites-2 }
+            
+.print-site-enumerate-headings #static_sites-md > h1:before { content: '2.3 ' }
+
+                .print-site-enumerate-headings #static_sites-md h2:before { content: '2.3.' counter(counter-static_sites-md-2) ' ' }
+                .print-site-enumerate-headings #static_sites-md h2 {  counter-increment: counter-static_sites-md-2 }
+            
+.print-site-enumerate-headings #section-3 > h1:before { content: '3 ' }
+.print-site-enumerate-headings #init-installation > h1:before { content: '3.1 ' }
+
+                .print-site-enumerate-headings #init-installation h2:before { content: '3.1.' counter(counter-init-installation-2) ' ' }
+                .print-site-enumerate-headings #init-installation h2 {  counter-increment: counter-init-installation-2 }
+            
+.print-site-enumerate-headings #init-setup > h1:before { content: '3.2 ' }
+
+                .print-site-enumerate-headings #init-setup h2:before { content: '3.2.' counter(counter-init-setup-2) ' ' }
+                .print-site-enumerate-headings #init-setup h2 {  counter-increment: counter-init-setup-2 }
+            
+.print-site-enumerate-headings #init-layout > h1:before { content: '3.3 ' }
+
+                .print-site-enumerate-headings #init-layout h2:before { content: '3.3.' counter(counter-init-layout-2) ' ' }
+                .print-site-enumerate-headings #init-layout h2 {  counter-increment: counter-init-layout-2 }
+            
+.print-site-enumerate-headings #init-test > h1:before { content: '3.4 ' }
+
+                .print-site-enumerate-headings #init-test h2:before { content: '3.4.' counter(counter-init-test-2) ' ' }
+                .print-site-enumerate-headings #init-test h2 {  counter-increment: counter-init-test-2 }
+            
+.print-site-enumerate-headings #section-4 > h1:before { content: '4 ' }
+.print-site-enumerate-headings #config-config > h1:before { content: '4.1 ' }
+
+                .print-site-enumerate-headings #config-config h2:before { content: '4.1.' counter(counter-config-config-2) ' ' }
+                .print-site-enumerate-headings #config-config h2 {  counter-increment: counter-config-config-2 }
+            
+.print-site-enumerate-headings #section-4-2 > h1:before { content: '4.2 ' }
+.print-site-enumerate-headings #config-themes-theme_config > h1:before { content: '4.2.1 ' }
+
+.print-site-enumerate-headings #config-themes-gallery > h1:before { content: '4.2.2 ' }
+
+.print-site-enumerate-headings #section-4-3 > h1:before { content: '4.3 ' }
+.print-site-enumerate-headings #config-plugins-verwendung > h1:before { content: '4.3.1 ' }
+
+.print-site-enumerate-headings #config-plugins-n%c3%bctzliche > h1:before { content: '4.3.2 ' }
+
+.print-site-enumerate-headings #section-5 > h1:before { content: '5 ' }
+.print-site-enumerate-headings #extras-html > h1:before { content: '5.1 ' }
+
+                .print-site-enumerate-headings #extras-html h2:before { content: '5.1.' counter(counter-extras-html-2) ' ' }
+                .print-site-enumerate-headings #extras-html h2 {  counter-increment: counter-extras-html-2 }
+            
+.print-site-enumerate-headings #extras-js_css > h1:before { content: '5.2 ' }
+
+                .print-site-enumerate-headings #extras-js_css h2:before { content: '5.2.' counter(counter-extras-js_css-2) ' ' }
+                .print-site-enumerate-headings #extras-js_css h2 {  counter-increment: counter-extras-js_css-2 }
+            
+.print-site-enumerate-headings #section-6 > h1:before { content: '6 ' }
+.print-site-enumerate-headings #deployment-github_pages > h1:before { content: '6.1 ' }
+
+                .print-site-enumerate-headings #deployment-github_pages h2:before { content: '6.1.' counter(counter-deployment-github_pages-2) ' ' }
+                .print-site-enumerate-headings #deployment-github_pages h2 {  counter-increment: counter-deployment-github_pages-2 }
+            
+.print-site-enumerate-headings #deployment-andere_anbieter > h1:before { content: '6.2 ' }
+
+                .print-site-enumerate-headings #deployment-andere_anbieter h2:before { content: '6.2.' counter(counter-deployment-andere_anbieter-2) ' ' }
+                .print-site-enumerate-headings #deployment-andere_anbieter h2 {  counter-increment: counter-deployment-andere_anbieter-2 }
+            
+.print-site-enumerate-headings #section-7 > h1:before { content: '7 ' }
+.print-site-enumerate-headings #demo-demo > h1:before { content: '7.1 ' }
+
+                .print-site-enumerate-headings #demo-demo h2:before { content: '7.1.' counter(counter-demo-demo-2) ' ' }
+                .print-site-enumerate-headings #demo-demo h2 {  counter-increment: counter-demo-demo-2 }
+            
+.print-site-enumerate-headings #demo-steps > h1:before { content: '7.2 ' }
+
+                .print-site-enumerate-headings #demo-steps h2:before { content: '7.2.' counter(counter-demo-steps-2) ' ' }
+                .print-site-enumerate-headings #demo-steps h2 {  counter-increment: counter-demo-steps-2 }
+            
+.print-site-enumerate-headings #vergleich > h1:before { content: '8 ' }
+
+                .print-site-enumerate-headings #vergleich h2:before { content: '8.' counter(counter-vergleich-2) ' ' }
+                .print-site-enumerate-headings #vergleich h2 {  counter-reset: counter-vergleich-3 ;  counter-increment: counter-vergleich-2 }
+            
+                .print-site-enumerate-headings #vergleich h3:before { content: '8.' counter(counter-vergleich-2) '.' counter(counter-vergleich-3) ' ' }
+                .print-site-enumerate-headings #vergleich h3 {  counter-increment: counter-vergleich-3 }
+            
+.print-site-enumerate-headings #zukunft > h1:before { content: '9 ' }
+
+                .print-site-enumerate-headings #zukunft h2:before { content: '9.' counter(counter-zukunft-2) ' ' }
+                .print-site-enumerate-headings #zukunft h2 {  counter-reset: counter-zukunft-3 ;  counter-increment: counter-zukunft-2 }
+            
+                .print-site-enumerate-headings #zukunft h3:before { content: '9.' counter(counter-zukunft-2) '.' counter(counter-zukunft-3) ' ' }
+                .print-site-enumerate-headings #zukunft h3 {  counter-increment: counter-zukunft-3 }
+            
+.print-site-enumerate-headings #ki > h1:before { content: '10 ' }
+
+                .print-site-enumerate-headings #ki h2:before { content: '10.' counter(counter-ki-2) ' ' }
+                .print-site-enumerate-headings #ki h2 {  counter-reset: counter-ki-3 ;  counter-increment: counter-ki-2 }
+            
+                .print-site-enumerate-headings #ki h3:before { content: '10.' counter(counter-ki-2) '.' counter(counter-ki-3) ' ' }
+                .print-site-enumerate-headings #ki h3 {  counter-increment: counter-ki-3 }
+            
+.print-site-enumerate-headings #quellen > h1:before { content: '11 ' }
+
+                .print-site-enumerate-headings #quellen h2:before { content: '11.' counter(counter-quellen-2) ' ' }
+                .print-site-enumerate-headings #quellen h2 {  counter-reset: counter-quellen-3 ;  counter-increment: counter-quellen-2 }
+            
+                .print-site-enumerate-headings #quellen h3:before { content: '11.' counter(counter-quellen-2) '.' counter(counter-quellen-3) ' ' }
+                .print-site-enumerate-headings #quellen h3 {  counter-increment: counter-quellen-3 }
+            </style>
+
+  <br>
+    
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/clovehitch5/E-Portfolio"><i class="fa fa-github"></i>
+GitHub</a>
+      </p>
+  <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

@@ -11,12 +11,13 @@
     
     <link rel="shortcut icon" href="./img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>E-Portfolio mkdocs</title>
+    <title>E-Portfolio MkDocs</title>
     <link href="./css/bootstrap-3.3.7.min.css" rel="stylesheet">
     <link href="./css/font-awesome-4.7.0.css" rel="stylesheet">
     <link href="./css/base.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/highlight.css">
-    <link href="style.css" rel="stylesheet">
+    <link href="stylesheets/link-embeds.css" rel="stylesheet">
+    <link href="stylesheets/style.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -35,9 +36,7 @@
       var is_top_frame = (window === window.parent);
         
         var pageToc = [
-          {title: "Welcome to MkDocs", url: "#_top", children: [
-              {title: "Commands", url: "#commands" },
-              {title: "Project layout", url: "#project-layout" },
+          {title: "MkDocs", url: "#_top", children: [
           ]},
         ];
 
@@ -83,7 +82,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     <a href="" class="wm-top-brand wm-top-link wm-vcenter">
       
       <div class="wm-top-title">
-        E-Portfolio mkdocs<br>
+        E-Portfolio MkDocs<br>
         
       </div>
     </a>
@@ -94,31 +93,114 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     
 <nav class="wm-toc-pane">
   
+    <ul class="wm-toctree wm-toc-repo">
+      <li class="wm-toc-li wm-toc-lev1">
+      <a class="wm-article-link wm-toc-text" href="https://github.com/clovehitch5/E-Portfolio">
+        <i class="fa fa-github"></i>
+
+        GitHub
+      </a>
+      </li>
+    </ul>
   <ul class="wm-toctree">
-        <li class="wm-toc-li wm-toc-lev1 "><a href="" class="wm-article-link wm-toc-text">Welcome to MkDocs</a>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="" class="wm-article-link wm-toc-text">MkDocs</a>
 </li>
-        <li class="wm-toc-li wm-toc-lev1 "><a href="befehle/" class="wm-article-link wm-toc-text">Die wichtigsten Befehle</a>
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Static Site Generatoren</span>
 </li>
-        <li class="wm-toc-li wm-toc-lev1 "><a href="html/" class="wm-article-link wm-toc-text">Html</a>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="static_sites/examples/" class="wm-article-link wm-toc-text">Beispiele</a>
 </li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="static_sites/static_Sites/" class="wm-article-link wm-toc-text">Static Site Generator</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="static_sites/md/" class="wm-article-link wm-toc-text">Warum Markdown?</a>
+</li>
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Aufsetzen</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="init/installation/" class="wm-article-link wm-toc-text">Installation</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="init/setup/" class="wm-article-link wm-toc-text">Projekt erstellen</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="init/layout/" class="wm-article-link wm-toc-text">Dateistruktur</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="init/test/" class="wm-article-link wm-toc-text">Lokal testen</a>
+</li>
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Konfiguration</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="config/config/" class="wm-article-link wm-toc-text">Konfiguration</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Themes</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="config/themes/theme_config/" class="wm-article-link wm-toc-text">Einstellung</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="config/themes/gallery/" class="wm-article-link wm-toc-text">Gallery</a>
+</li>
+  </ul>
+</li>
+
+      <li class="wm-toc-li wm-toc-lev2 wm-toc-opener"><span class="wm-toc-text">Plugins</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev3 "><a href="config/plugins/verwendung/" class="wm-article-link wm-toc-text">Verwendung</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev3 "><a href="config/plugins/n%C3%BCtzliche/" class="wm-article-link wm-toc-text">nützlich Plugins</a>
+</li>
+  </ul>
+</li>
+
+  </ul>
+</li>
+
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">HTML, JS & Css</span>
+</li>
+<li class="wm-toc-li-nested collapse">
+  <ul class="wm-toctree">
+      <li class="wm-toc-li wm-toc-lev2 "><a href="extras/html/" class="wm-article-link wm-toc-text">HTML-Code in md</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="extras/js_css/" class="wm-article-link wm-toc-text">JS &amp; CSS</a>
+</li>
+  </ul>
+</li>
+
         <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Deployment</span>
 </li>
 <li class="wm-toc-li-nested collapse">
   <ul class="wm-toctree">
       <li class="wm-toc-li wm-toc-lev2 "><a href="deployment/Github_Pages/" class="wm-article-link wm-toc-text">Github Pages</a>
 </li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="deployment/andere_Anbieter/" class="wm-article-link wm-toc-text">andere Anbieter</a>
+</li>
   </ul>
 </li>
 
-        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Themes</span>
+        <li class="wm-toc-li wm-toc-lev1 wm-toc-opener"><span class="wm-toc-text">Demo</span>
 </li>
 <li class="wm-toc-li-nested collapse">
   <ul class="wm-toctree">
-      <li class="wm-toc-li wm-toc-lev2 "><a href="themes/gallery/" class="wm-article-link wm-toc-text">Gallery</a>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="demo/demo/" class="wm-article-link wm-toc-text">Demo</a>
+</li>
+      <li class="wm-toc-li wm-toc-lev2 "><a href="demo/steps/" class="wm-article-link wm-toc-text">Steps</a>
 </li>
   </ul>
 </li>
 
+        <li class="wm-toc-li wm-toc-lev1 "><a href="Vergleich/" class="wm-article-link wm-toc-text">Vergleich</a>
+</li>
+        <li class="wm-toc-li wm-toc-lev1 "><a href="ki/" class="wm-article-link wm-toc-text">Ki generierte Inhalte</a>
+</li>
   </ul>
 </nav>
 
@@ -139,12 +221,12 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="befehle/" class="btn btn-xs btn-default pull-right">
+      <a href="static_sites/examples/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="befehle/" class="btn btn-xs btn-link">
-        Die wichtigsten Befehle
+      <a href="static_sites/examples/" class="btn btn-xs btn-link">
+        Beispiele
       </a>
     </div>
     
@@ -152,21 +234,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    <h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+    <h1 id="mkdocs">MkDocs</h1>
+<ol>
+<li>Static Site Generatoren</li>
+<li>Projekt erstellen</li>
+<li>Konfiguration<ol>
+<li>Theme</li>
+<li>Plugins</li>
+</ol>
+</li>
+<li>Html,JS,CSS</li>
+<li>Deployment</li>
+<li>Demo</li>
+<li>Vergleich</li>
+</ol>
 
   <br>
     
@@ -179,12 +260,12 @@ docs/
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="befehle/" class="btn btn-xs btn-default pull-right">
+      <a href="static_sites/examples/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="befehle/" class="btn btn-xs btn-link">
-        Die wichtigsten Befehle
+      <a href="static_sites/examples/" class="btn btn-xs btn-link">
+        Beispiele
       </a>
     </div>
     
@@ -194,6 +275,10 @@ docs/
 </div>
 
 <footer class="container-fluid wm-page-content">
+      <p>
+        <a href="https://github.com/clovehitch5/E-Portfolio/edit/master/docs/index.md"><i class="fa fa-github"></i>
+Edit on GitHub</a>
+      </p>
   <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
 </footer>
 
@@ -201,5 +286,5 @@ docs/
 </html>
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2026-06-07 20:41:17.555005+00:00
+Build Date UTC : 2026-06-11 12:06:25.754971+00:00
 -->

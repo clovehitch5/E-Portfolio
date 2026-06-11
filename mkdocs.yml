@@ -1,8 +1,46 @@
-site_name: E-Portfolio mkdocs
+site_name: E-Portfolio MkDocs
 theme: windmill
 
 plugins:
-  - search
+    - search
+    - mermaid2
+    - link-embeds:
+          accent: 4C59BFE0
 
+#   - open-in-new-tab
 extra_css:
-  - style.css
+    - stylesheets/link-embeds.css
+    - stylesheets/style.css
+repo_url: https://github.com/clovehitch5/E-Portfolio
+
+nav:
+    - index.md
+    - Static Site Generatoren:
+          - static_sites/examples.md
+          - static_sites/static_Sites.md
+          - static_sites/md.md
+    - Aufsetzen:
+          - Installation: init/installation.md
+          - Projekt erstellen: init/setup.md
+          - Dateistruktur: init/layout.md
+          - Lokal testen: init/test.md
+    - Konfiguration:
+          - config/config.md
+          - Themes:
+                - Einstellung: config/themes/theme_config.md
+                - Gallery: config/themes/gallery.md
+          - Plugins:
+                - Verwendung: config/plugins/verwendung.md
+                - nützlich Plugins: config/plugins/nützliche.md
+    # - Markdown Extensions:
+    - HTML, JS & Css:
+          - extras/html.md
+          - extras/js_css.md
+    - Deployment:
+          - Github Pages: deployment/Github_Pages.md
+          - andere Anbieter: deployment/andere_Anbieter.md
+    - Demo:
+          - demo/demo.md
+          - demo/steps.md
+    - Vergleich.md
+    - ki.md

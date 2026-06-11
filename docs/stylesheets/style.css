@@ -1,0 +1,72 @@
+
+
+@view-transition{
+    navigation: auto;
+}
+
+::view-transition-group(root){
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+::view-transition-old(root){
+    animation-name: slide-out;
+}
+::view-transition-new(root){
+    animation-name: slide-in;
+}
+
+@keyframes slide-out{
+    to{
+        translate: -100vw;
+    }
+}
+@keyframes slide-in{
+    from{
+        translate: 100vw;
+    }
+}
+
+  .pipeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin: 32px 0;
+  }
+
+  .pipeline-row {
+    display: flex;
+    flex-wrap: wrap;        /* <-- allows wrapping */
+    justify-content: center; /* <-- centers wrapped items */
+    align-items: center;
+    gap: 24px;               /* <-- spacing between items */
+    max-width: 100%;         /* <-- prevents clipping */
+  }
+
+  .pipeline-step {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px 16px;
+    width: 180px;            /* <-- fixed width for consistency */
+    text-align: center;
+    background: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+
+  .pipeline-step img {
+    max-width: 48px;
+    max-height: 48px;
+    display: block;
+    margin: 0 auto 8px auto;
+  }
+
+  .pipeline-step-title {
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .pipeline-arrow {
+    font-size: 2rem;
+    color: #666;
+    margin: 0 8px;
+  }

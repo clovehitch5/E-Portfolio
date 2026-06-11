@@ -2,6 +2,10 @@
 
 zu finden auf [https://github.com/mkdocs/catalog](https://github.com/mkdocs/catalog)
 
+## search
+
+Suche über die Doku
+
 ```embed
 url: https://mkdocs-mermaid2.readthedocs.io/en/latest/
 name: mermaid2

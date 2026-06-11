@@ -6,8 +6,7 @@ plugins:
     - mermaid2
     - link-embeds:
           accent: 4C59BFE0
-
-#   - open-in-new-tab
+    - print-site
 extra_css:
     - stylesheets/link-embeds.css
     - stylesheets/style.css
@@ -43,4 +42,6 @@ nav:
           - demo/demo.md
           - demo/steps.md
     - Vergleich.md
+    - Zukunft.md
     - ki.md
+    - quellen.md

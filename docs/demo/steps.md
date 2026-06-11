@@ -4,9 +4,22 @@
 
 add files
 
+````md
+```mermaid
+flowchart TD
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    C -->|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[Car]
+```
+````
+
+search plugin [https://github.com/mkdocs/catalog](https://github.com/mkdocs/catalog)
+
 add theme [https://pawamoy.github.io/mkdocs-gallery/](https://pawamoy.github.io/mkdocs-gallery/)
 
-<button type="button" onClick="window.open(https://github.com/new)">https://github.com/new</button>
+create repository [https://github.com/new](https://github.com/new)
 
 <button type="button" onClick="navigator.clipboard.writeText('git remote add origin git@github.com:clovehitch5/mkdocs_demo.git')">git remote add origin git@github.com:clovehitch5/mkdocs_demo.git</button>
 
